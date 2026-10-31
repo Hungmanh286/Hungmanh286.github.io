@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nguyễn Mạnh Hùng — AI Engineer</title>
+  <meta name="description" content="Nguyễn Mạnh Hùng — AI engineer building multi-agent LLM applications and researching flow-matching diffusion models." />
+  <meta property="og:title" content="Nguyễn Mạnh Hùng — AI Engineer" />
+  <meta property="og:description" content="Multi-agent LLM applications · Generative models · Full-stack AI products" />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/144104660?v=4" />
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/144104660?v=4" />
+  <style>
+    :root {
+      --bg: #0b1020; --panel: #121933; --border: #222b4d; --text: #e6e9f5;
+      --muted: #9aa3c7; --accent: #7aa2f7; --accent2: #bb9af7;
+    }
+    @media (prefers-color-scheme: light) {
+      :root { --bg: #f7f8fc; --panel: #ffffff; --border: #e3e6f0; --text: #1b2033; --muted: #5b6380; --accent: #2f5bd3; --accent2: #7a3fd1; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    header { padding: 88px 0 48px; display: flex; gap: 32px; align-items: center; flex-wrap: wrap; }
+    header img { width: 120px; height: 120px; border-radius: 50%; border: 3px solid var(--border); }
+    h1 { font-size: 2.4rem; margin: 0 0 4px; }
+    .role { font-size: 1.15rem; background: linear-gradient(90deg, var(--accent), var(--accent2)); -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 600; }
+    .links { margin-top: 14px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { border: 1px solid var(--border); background: var(--panel); padding: 8px 16px; border-radius: 999px; color: var(--text); font-size: .95rem; }
+    .btn:hover { border-color: var(--accent); text-decoration: none; }
+    section { padding: 32px 0; }
+    h2 { font-size: 1.4rem; margin: 0 0 18px; }
+    h2::before { content: "▹ "; color: var(--accent); }
+    .muted { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+    .card { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 20px; display: flex; flex-direction: column; transition: transform .15s, border-color .15s; }
+    .card:hover { transform: translateY(-3px); border-color: var(--accent); }
+    .card h3 { margin: 0 0 8px; font-size: 1.08rem; }
+    .card p { margin: 0 0 14px; color: var(--muted); font-size: .95rem; flex: 1; }
+    .tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { font-size: .78rem; padding: 2px 10px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 14%, transparent); color: var(--accent); }
+    .skills { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+    .skills div { background: var(--panel); border: 1px solid var(--border); border-radius: 14px; padding: 16px 20px; }
+    .skills b { display: block; margin-bottom: 6px; }
+    footer { padding: 40px 0 60px; text-align: center; color: var(--muted); font-size: .9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="https://avatars.githubusercontent.com/u/144104660?v=4" alt="Nguyễn Mạnh Hùng" />
+      <div>
+        <h1>Nguyễn Mạnh Hùng</h1>
+        <div class="role">AI Engineer · LLM Agents · Generative Models</div>
+        <p class="muted" style="margin:8px 0 0">B.Sc. in Artificial Intelligence, University of Engineering and Technology – VNU Hanoi</p>
+        <div class="links">
+          <a class="btn" href="https://github.com/Hungmanh286">GitHub</a>
+          <a class="btn" href="https://github.com/Hungmanh286/Thesis">Thesis</a>
+          <a class="btn" href="#projects">Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <p>I build <b>multi-agent LLM applications</b>: orchestrated agents, retrieval-augmented generation, and real-time chat backed by production infrastructure. My bachelor thesis, <i>Agentic AI for Programming Education</i>, designs a multi-agent framework where generator, answer and reviewer agents collaborate to create pedagogically sound quizzes. I also do research on <b>flow-matching diffusion models</b> and looped transformers, reproducing recent papers from scratch in PyTorch.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="grid">
+        <a class="card" href="https://github.com/Hungmanh286/AI-CODE-MENTOR">
+          <h3>AI Code Mentor</h3>
+          <p>Multi-agent AI tutor. A LangGraph orchestrator routes requests to quiz, summary, mind-map and Q&amp;A agents over uploaded documents, with WebSocket chat, tracing and rate limiting.</p>
+          <div class="tags"><span class="tag">FastAPI</span><span class="tag">LangGraph</span><span class="tag">Qdrant</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Docker</span></div>
+        </a>
+        <a class="card" href="https://github.com/Hungmanh286/code-mentor-ui">
+          <h3>Code Mentor UI</h3>
+          <p>Web client for AI Code Mentor: streaming chat with math rendering, document panel with image cropping, and a quiz / flashcard / mind-map studio.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">Bun</span><span class="tag">Ansible</span></div>
+        </a>
+        <a class="card" href="https://github.com/Hungmanh286/diffusion-model">
+          <h3>Looped Flows Reproduction</h3>
+          <p>From-scratch reproduction of <i>Thinking with Looped Flows</i> (N-Queens 8×8): flow matching on a looped transformer, with a CPU test suite and documented deviations from the paper.</p>
+          <div class="tags"><span class="tag">PyTorch</span><span class="tag">Flow matching</span><span class="tag">pytest</span></div>
+        </a>
+        <a class="card" href="https://github.com/Hungmanh286/Segmentation-Analysis">
+          <h3>Vietnamese Sentiment Analysis</h3>
+          <p>Fine-tuned PhoBERT and DistilBERT compared with a Bi-LSTM on Vietnamese movie reviews; the 3-layer Bi-LSTM reached 95.1% accuracy.</p>
+          <div class="tags"><span class="tag">PyTorch</span><span class="tag">Transformers</span><span class="tag">NLP</span></div>
+        </a>
+        <a class="card" href="https://github.com/Hungmanh286/Moppe">
+          <h3>Moppe</h3>
+          <p>E-commerce web app with JWT authentication, cart and checkout, and a collaborative-filtering product recommender.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Express</span><span class="tag">MongoDB</span><span class="tag">Flask</span></div>
+        </a>
+        <a class="card" href="https://github.com/Hungmanh286/Big-Data">
+          <h3>Neo4j Chat Analytics</h3>
+          <p>Graph analytics on team-chat logs: PageRank for influential users and Label Propagation for communities.</p>
+          <div class="tags"><span class="tag">Neo4j</span><span class="tag">Cypher</span><span class="tag">GDS</span></div>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="skills">
+        <div><b>AI / ML</b><span class="muted">PyTorch, Hugging Face Transformers, flow matching &amp; diffusion, NLP</span></div>
+        <div><b>LLM systems</b><span class="muted">LangGraph, LangChain, RAG, Qdrant, Langfuse, multi-agent design</span></div>
+        <div><b>Backend &amp; infra</b><span class="muted">FastAPI, Express, PostgreSQL, Redis, MongoDB, Neo4j, Docker, Ansible</span></div>
+        <div><b>Frontend</b><span class="muted">React, TypeScript, Vite, Tailwind CSS</span></div>
+      </div>
+    </section>
+
+    <footer>© 2026 Nguyễn Mạnh Hùng · <a href="https://github.com/Hungmanh286">github.com/Hungmanh286</a></footer>
+  </div>
+</body>
+</html>
